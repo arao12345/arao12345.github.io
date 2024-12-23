@@ -1,40 +1,72 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rish Rao </title>
+    <title>Nikolai Prosjanykov Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="favicon">
 </head>
 <body>
+    <div id="loading-screen">
+        <div class="loader"></div>
+    </div>
+    <header id="header">
+            <nav>
+                <button id="menu-toggle" aria-label="Toggle navigation">
+                    &#9776;
+            </button>
+            <ul id="header-nav">
+                <li><a href="#about-me-description">About Me</a></li>
+                <li><a href="#skills-description">Skills</a></li>
+                <li><a href="#work-details">Work Experience</a></li>
+                <li><a href="#project-section-description">Personal Projects</a></li>
+                <li><a href="#contact-me-description">Contact Me!</a></li>
+                <li><a href="Nikolai_RPA_Resume.pdf" target="_blank" class="resume-link">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
     <div id="main-content">
         <div id="intro">
             <p class="greeting">Hi, my name is</p>
-            <h1 class="name">Ambarish Rao</h1>
+            <h1 class="name">Nikolai Prosjanykov.</h1>
             <h2 class="tagline">I bridge numbers and narratives.</h2>
-            <a href="https://www.linkedin.com/in/ambarish-rao-lnkdn/" class="cta-button" target="_blank">Let's connect!</a>
+            <a href="https://www.linkedin.com/in/nikolaiprosjanykov/" class="cta-button" target="_blank">Let's connect!</a>
         </div>
         <div class="about-section">
-            <div id="about-me">
+            <div id="about-me" class="section">
                 <h2 class="section-title">About Me</h2>
-                <p class="about-description">Welcome to my professional space! I am Nikolai Prosjanykov Gonzalez, a dedicated student with a passion for precision,
-                    strategy, and innovation. As a dual major in Accounting and Management Information Systems at <span class="highlight">Michigan Technological University</span>, I have developed 
-                    a meticulous analytical acumen that is deeply rooted in the principles of financial diligence and enhanced by the cutting-edge capabilities of inform
-                    ation technology. My educational journey is further enriched as I delve into a Master's in Data Science, where I am dedicated to bridging the gap between
-                     quantitative analysis and strategic storytelling.</p> 
-               <p class="about-description">Leadership is my forte, as captain of the men's tennis team and as an engaged member of both the Accounting Club and Student G
-                     overnment at Michigan Tech. These roles have fine-tuned my leadership acumen and collaborative spirit.
-
-                     Discover with me the synergy of data, leadership, and ingenuity.</p>
+                <a id="about-me-description"></a>
+                <p class="about-description animated">Welcome to my professional space! I am Nikolai, passionate about precision, strategy, and innovation. With a dual major in Accounting and Information Systems from <span class="highlight"><a href="https://www.mtu.edu/" target="_blank">Michigan Technological University</a></span>, I have developed a meticulous analytical acumen rooted in financial diligence and enhanced by cutting-edge information technology. Aspiring to pursue a Master's in Data Analytics and becoming a CPA, I am dedicated to bridging the gap between quantitative analysis and strategic storytelling.
+                </p>
+                <p class="about-description animated">
+                    My experience in accounting and information systems has provided me with a solid foundation in financial management, data automation, and compliance. I have worked extensively on automating data workflows using tools like Power Automate and UiPath, as well as on projects involving predictive modeling and financial risk analysis using Python, Excel, and Power BI.
+                    </p>
+                <p class="about-description animated">
+                    Beyond my professional skills, I was a proud member of the <span class="highlight"><a href="https://www.michigantechhuskies.com/sports/mten/2023-24/bios/prosjanykov_nikolai_qtfp" target="_blank">Men's Tennis Team</a></span> at Michigan Tech and an active participant in the Accounting Club and Student Government. These roles have fine-tuned my leadership acumen and collaborative spirit.
+                    </p>
+                <p class="about-description animated">
+                    Discover with me the synergy of data, leadership, and ingenuity. Let's connect and explore how I can contribute to your organization's success.
+                    </p>
             </div>
             <div id="image-container">
-                <img src="images/face.png" alt="face1" class="profile-image" onclick="switchImage()" id="profile-image">
-                <img src="images/FDI_0260.jpeg" alt="face2" class="profile-image" style="display: none;" onclick="switchImage()" id="second-image">
+                <img src="images/face.png" alt="face1" class="profile-image animated" onclick="switchImage()" id="profile-image">
+                <img src="images/FDI_0260.jpeg" alt="face2" class="profile-image animated" style="display: none;" onclick="switchImage()" id="second-image">
             </div>
         </div>
-        <div id="skills">
+        <div id="skills" class="section">
             <h2 class="section-title">Skills</h2>
+            <a id="skills-description"></a>
             <div class="skills-logos">
+                <div class="logo-container">
+                    <img src="images/Simpleicons-Team-Simple-Powerautomate.512.png" alt="Power Automate" class="skill-logo">
+                    <span class="logo-description">Power Automate</span>
+                </div>
+                <div class="logo-container">
+                    <img src="images/uipathlogo.png" alt="UiPath" class="skill-logo">
+                    <span class="logo-description">UiPath</span>
+                </div>
                 <div class="logo-container">
                     <img src="images/python.png" alt="Python" class="skill-logo">
                     <span class="logo-description">Python</span>
@@ -88,6 +120,10 @@
                     <span class="logo-description">Visual Studio</span>
                 </div>
                 <div class="logo-container">
+                    <img src="images/Amazon_Web_Services-Lo.png" alt="Amazon Web Services" class="skill-logo">
+                    <span class="logo-description">Amazon Web Services</span>
+                </div>
+                <div class="logo-container">
                     <img src="images/chatgpt.png" alt="ChatGPT" class="skill-logo">
                     <span class="logo-description">ChatGPT</span>
                 </div>
@@ -103,12 +139,8 @@
                     <img src="images/sas.png" alt="sas" class="skill-logo">
                     <span class="logo-description">Statistical Analysis Software</span>
                 </div>
-
-                </div>
             </div>
-        </div>
-    </div>
-           <div id="work-experience" class="section work-entry-animated">
+        <div id="work-experience" class="section work-entry-animated">
             <h2 class="section-title">Work Experience</h2>
             <a id="work-details"></a>
             <div class="experience-container">
@@ -214,6 +246,7 @@
             <a href="mailto:nikola.prosja@gmail.com" class="contact-button">Get in Touch!</a>
         </div>
     </div>
+    <div id="light"></div>
     <script src="script.js"></script>
 </body>
-</html>
+</html>               
