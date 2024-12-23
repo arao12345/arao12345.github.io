@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "file:///C:/Users/nikol/OneDrive/Desktop/portfolio/portfolio.html",
+            "url": "file:///C:/Users/arao/Documents/GitHub/arao12345.github.io/index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
