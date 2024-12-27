@@ -106,6 +106,29 @@ body {
     color: #8892B0; /* Adjust to the color you want for the tagline */
     margin-bottom: 20px; /* Space below the tagline */
 }
+/* Style for the tags container */
+.tags {
+    display: flex;
+    flex-wrap: wrap; /* Allow tags to wrap to the next line */
+    gap: 10px; /* Add space between tags */
+    margin-top: 10px; /* Add some space above the tags */
+}
+
+/* Style for each tag */
+.tags span {
+    background-color: #405e7e; /* Change this to your desired background color */
+    color: white; /* Change this to your desired text color */
+    padding: 5px 10px; /* Add padding inside the tags */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    font-size: 0.9rem; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+}
+
+.tags span:hover {
+    box-shadow: 0 4px 8px rgba(164, 164, 196, 0.884); /* Add shadow effect */
+}
+
 .cta-button {
     display: inline-block; /* Makes the link behave like a button */
     background: transparent; /* Transparent background */
@@ -153,10 +176,24 @@ body {
     transform: translateY(-50%); /* Center the line vertically relative to the title */
 }
 
+.section-subtitle {
+    font-family: 'SanFransiscoM', Arial, sans-serif;
+    position: relative;
+    display: block;
+    top:10%;
+    margin-top: 1em;
+    margin-bottom: 5px; /* Space below the section title */
+    font-size: 24px; /* Size of the section title */
+    color: #9ca2b4; /* Color of the section title, adjust as needed */
+    /* Other styles... <div>Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a>is licensed by CC BY 4.0</div>*/
+}
+
 .section-title:hover::after {
     width: 52rem; /* Optional: Increase the length of the line on hover */
 }
-
+.section-subtitle:hover::after {
+    width: 22rem; /* Optional: Increase the length of the line on hover */
+}
 .about-description {
     font-family: 'SanFransiscoM';
     font-size: 1.125rem; /* Size of the about description text */
@@ -172,7 +209,15 @@ body {
     gap: 25px; /* Space between the about me text and the image frame */
 
 }
-
+.about-description-list {
+    font-family: 'SanFransiscoM';
+    font-size: 1.1rem; /* Size of the about description text */
+    line-height: 1.6; /* Line height for better readability */
+    max-width: 25rem;
+    margin-top: 1.25rem; /* Space above the about description */
+    padding-bottom: 1rem;
+    color:#9d9e99
+}
 #about-me {
     padding: 0rem;
     flex-basis: 100%; /* Adjust the width as needed */
@@ -279,12 +324,6 @@ body {
     opacity: 1;
 }
 
-
-
-
-
-
-
 /* Adjustments for different screen sizes */
 @media (max-width: 600px) {
     .skills-logos {
@@ -298,11 +337,6 @@ body {
         height: 70px;
     }
 }
-
-
-
-
-
 
 @media (max-width: 600px) {
     .greeting {
@@ -432,7 +466,7 @@ nav {
 /* Style for the work experience section */
 .work-experience-section {
     padding: 2rem;
-    background-color: #d4f130; /* Change this to your desired background color */
+    background-color: #5f4f85; /* Change this to your desired background color */
     color: #FFFFFF31; /* Change this to your desired text color */
     margin-top: 0; 
     display: flex;
@@ -442,13 +476,49 @@ nav {
 
 /* Style for each work experience entry */
 .work-experience {
+    position: relative;
     margin-bottom: 2rem;
     padding: 1rem;
     border: 1px solid #ddd; /* Optional: Add a border */
     border-radius: 5px; /* Optional: Add rounded corners */
     background-color: #151a46; /* Change this to your desired background color */
 }
-
+/* Style for the work header to align items horizontally */
+.work-header {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Add space between the thumbnail and job title */
+}
+/* Style for the thumbnail image */
+.thumbnail {
+    width: 50px; /* Set the width of the thumbnail */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+/* Style for the full-size image */
+.fullsize-image {
+    display: none; /* Hide the full-size image by default */
+    position: absolute;
+    top: 0;
+    left: 60px; /* Adjust the position as needed */
+    z-index: 10; /* Ensure the full-size image is above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
+/* Show the full-size image on hover */
+.thumbnail:hover + .fullsize-image {
+    display: block;
+}
+/* Style for the full-size image */
+.thumbnail:hover::after {
+    content: url('images/cna-f.png'); /* Path to the full-size image */
+    position: relative;
+    top: 0;
+    left: 110px; /* Adjust the position as needed */
+    width: auto; /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
+    z-index: 10; /* Ensure the full-size image is above other content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+}
 /* Style for the job title */
 .job-title {
     font-size: 1.5rem;
@@ -473,12 +543,14 @@ nav {
 .job-description {
     font-size: 1rem;
     line-height: 1.5;
+    margin-bottom: 0.1rem;
+    font-family: 'SFMono';
 }
-/*
-#main-content, #intro, #about-me, #skills {
-    outline: 2px solid red;
-    outline-offset: -2px; 
+
+/* Style for the job description */
+.job-description-list {
+    font-size: 0.75rem;
+    line-height: 1.5;
+    margin-bottom: 0.1rem;
+    font-family: 'SFMono';
 }
-#image-container {
-    border: 2px solid rgb(55, 116, 185);
-}*/
