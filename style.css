@@ -554,3 +554,23 @@ nav {
     margin-bottom: 0.1rem;
     font-family: 'SFMono';
 }
+
+/* Style for the footer */
+.footer {
+    background-color: #141313; /* Change this to your desired background color */
+    color: white; /* Change this to your desired text color */
+    text-align: center; /* Center the text */
+    padding: 20px 0; /* Add padding to the top and bottom */
+    position: fixed; /* Fix the footer at the bottom */
+    width: 100%; /* Make the footer span the full width */
+    bottom: 0; /* Position the footer at the bottom */
+}
+
+.footer a {
+    color: #007BFF; /* Change this to your desired link color */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
