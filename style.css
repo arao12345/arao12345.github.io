@@ -409,7 +409,7 @@ body {
     display: inline-block;
     padding: 10px 20px;
     margin: 5px;
-    background-color: #007BFF; /* Change this to your desired button color */
+    background-color: #121113; /* Change this to your desired button color */
     color: white; /* Change this to your desired text color */
     text-decoration: none;
     border-radius: 5px; /* Optional: Add rounded corners */
@@ -432,12 +432,15 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
     z-index: 1000; /* Ensure the header is above other content */
     padding: 10px; /* Add padding to the header */
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: center; /* Center the navigation links horizontally */
+    align-items: center; /* Center the navigation links vertically */
 }
 
 /* Style the navigation */
 nav {
     display: flex;
-    justify-content: flex-end; /* Align items to the left */
+    justify-content: center; /* Align items to the left */
     align-items: center;
     width: 100%;
 }
@@ -445,6 +448,8 @@ nav {
 /* Style the navigation list */
 #header-nav {
     display: flex;
+    justify-content: center; /* Center the navigation links */
+    align-items: center; /* Center the navigation links vertically */
     gap: 10px; /* Add space between buttons */
     list-style: none; /* Remove default list styling */
     padding: 0;
