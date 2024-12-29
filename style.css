@@ -105,6 +105,7 @@ body {
     font-family:'SanFransiscoHEAVY';
     color: #8892B0; /* Adjust to the color you want for the tagline */
     margin-bottom: 20px; /* Space below the tagline */
+    font-size: 1.5rem !important;
 }
 /* Style for the tags container */
 .tags {
@@ -573,4 +574,35 @@ nav {
 
 .footer a:hover {
     text-decoration: underline; /* Add underline on hover */
+}
+
+
+#container {
+    text-align: center;
+}
+a, figure {
+    display: inline-block;
+}
+figcaption {
+    margin: 10px 0 0 0;
+    font-variant: small-caps;
+    font-family: Arial;
+    font-weight: bold;
+    color: #bb3333;
+}
+figure {
+    padding: 5px;
+}
+img:hover {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+img {
+    transition: transform 0.2s;
+    -webkit-transition: -webkit-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -o-transition: -o-transform 0.2s;
 }
