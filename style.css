@@ -6,11 +6,11 @@
     box-sizing: border-box;
 }
 ::selection {
-    background: #323d52; /* Replace with your desired color */
-    color:rgb(128, 128, 255)/* Replace with your desired text color */
+    background: #323d52; 
+    color:rgb(128, 128, 255)
 }     
 html {
-    font-size: 16px; /* This is typically the default size */
+    font-size: 24px; 
 }
 body {
     background: rgb(16, 25, 75);
@@ -18,7 +18,7 @@ body {
     color: white;
     margin: 0;
     padding: 0;
-    /* font-family: Arial, Helvetica, sans-serif; */
+    
 }
 @font-face {
     font-family: 'SanFransiscoHEAVY';
@@ -56,11 +56,11 @@ body {
 }
 @keyframes slideInFromRight {
     0% {
-      transform: translateX(100%); /* Start from beyond the right edge */
+      transform: translateX(100%); 
       opacity: 0;
     }
     100% {
-      transform: translateX(0); /* End at its final position */
+      transform: translateX(0); 
       opacity: 1;
     }
 }
@@ -72,11 +72,11 @@ body {
     width: 80%;
     max-width: 62.5rem;
     padding: 5rem 1.25rem;
-    gap: 2rem; /* 20px if the base font-size is 16px */
+    gap: 2rem; 
 }
 #intro, #about-me {
-    width: 100%; /* Consistent width for alignment */
-    text-align: left; /* Adjust top margin as needed */
+    width: 100%; 
+    text-align: left; 
 }
 #intro {
     margin-top: 18rem;
@@ -86,95 +86,94 @@ body {
     color:#CCD6F6;
     font-family: 'SanFransiscoHEAVY';
     font-size: 3.02rem;
-    margin-bottom: 20px; /* Space between the heading and paragraph */
-    margin-left: 0; /* Align the left edge of h1 with the paragraph */
+    margin-bottom: 20px; 
+    margin-left: 0; 
 }
 
 .greeting {
     font-family: 'SFMono';
-    font-size: 18px; /* Adjust as needed */
-    color: #55D8BD; /* Light grey text color, adjust as needed */
-    margin-bottom: 10px; /* Small space below the greeting */
+    font-size: 18px; 
+    color: #55D8BD; 
+    margin-bottom: 10px; 
 }
 .name {
     font-weight: bold;
-    color: #575757; /* Adjust to the color you want for the name */
-    margin-bottom: 30px; /* Space below the name */
+    color: #575757; 
+    margin-bottom: 30px; 
 }
 .tagline { 
     font-family:'SanFransiscoHEAVY';
-    color: #8892B0; /* Adjust to the color you want for the tagline */
-    margin-bottom: 20px; /* Space below the tagline */
+    color: #8892B0; 
+    margin-bottom: 20px; 
     font-size: 1.5rem !important;
 }
-/* Style for the tags container */
+
 .tags {
     display: flex;
-    flex-wrap: wrap; /* Allow tags to wrap to the next line */
-    gap: 10px; /* Add space between tags */
-    margin-top: 10px; /* Add some space above the tags */
+    flex-wrap: wrap; 
+    gap: 10px; 
+    margin-top: 10px; 
 }
 
-/* Style for each tag */
 .tags span {
-    background-color: #405e7e; /* Change this to your desired background color */
-    color: white; /* Change this to your desired text color */
-    padding: 5px 10px; /* Add padding inside the tags */
-    border-radius: 5px; /* Optional: Add rounded corners */
-    font-size: 0.9rem; /* Adjust the font size */
-    font-weight: bold; /* Make the text bold */
-    transition: box-shadow 0.3s ease; /* Smooth transition for the shadow */
+    background-color: #405e7e; 
+    color: white; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-size: 0.9rem; 
+    font-weight: bold; 
+    transition: box-shadow 0.3s ease; 
 }
 
 .tags span:hover {
-    box-shadow: 0 4px 8px rgba(164, 164, 196, 0.884); /* Add shadow effect */
+    box-shadow: 0 4px 8px rgba(164, 164, 196, 0.884); 
 }
 
 .cta-button {
-    display: inline-block; /* Makes the link behave like a button */
-    background: transparent; /* Transparent background */
-    color: #55D8BD; /* Text color - choose a color that makes the text readable on your background */
-    padding: 10px 20px; /* Padding inside the button */
-    border: 1.5px solid #55D8BD; /* Border color - choose a color that stands out on your background */
-    text-decoration: none; /* Removes underline from the link */
+    display: inline-block; 
+    background: transparent; 
+    color: #55D8BD; 
+    padding: 10px 20px; 
+    border: 1.5px solid #55D8BD; 
+    text-decoration: none; 
     font-family:'SFMono';
     font-size: 14px;
-    border-radius: 5px; /* Rounded corners for the button */
-    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effects */
+    border-radius: 5px; 
+    transition: background-color 0.3s, color 0.3s; 
     transition: transform 0.3s ease, box-shadow 0.3s ease
 }
 
 .cta-button:hover {
-    background: transparent; /* Background color on hover - choose a subtle color or keep it transparent */
-    color: #55D8BD; /* Text color on hover - choose a color that contrasts the hover background */
-    border-color: #55D8BD; /* Border color on hover - optional if you want to change the border color on hover */
+    background: transparent; 
+    color: #55D8BD; 
+    border-color: #55D8BD; 
     transform: scale(1.02) translate(0, -5px);
     box-shadow: 10px 10px 0px 0px #55D8BD;
 }
 #about-me {
-    font-family:Arial, Helvetica, sans-serif; /* Center the content and add space below the section */ /* Add padding for spacing inside the section */
-    color: #7582a3; /* Text color */
+    font-family:Arial, Helvetica, sans-serif;  
+    color: #7582a3; 
 }
 .section-title {
     font-family: 'SanFransiscoM', Arial, sans-serif;
     position: relative;
-    display: inline-block; /* To contain the size of the pseudo-element to the content */
+    display: inline-block; 
     margin-top: 60%;
-    margin-bottom: 20px; /* Space below the section title */
-    font-size: 32px; /* Size of the section title */
-    color: #CCD6F6; /* Color of the section title, adjust as needed */
-    /* Other styles... <div>Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a>is licensed by CC BY 4.0</div>*/
+    margin-bottom: 20px; 
+    font-size: 32px; 
+    color: #CCD6F6; 
+    
 }
 .section-title::after {
     content: '';
     position: absolute;
-    top: 50%; /* Align the line vertically */
-    left: calc(100% + 15px); /* Position the line after the text with some spacing */
-    width: 3.125rem; /* Initial width of the line */
-    height: 0.5px; /* Make the line thinner */
-    background-color: #575757; /* Color of the line */
-    transition: width 0.3s ease-in-out; /* Smooth transition for the line */
-    transform: translateY(-50%); /* Center the line vertically relative to the title */
+    top: 50%; 
+    left: calc(100% + 15px); 
+    width: 3.125rem; 
+    height: 0.5px; 
+    background-color: #575757; 
+    transition: width 0.3s ease-in-out; 
+    transform: translateY(-50%); 
 }
 
 .section-subtitle {
@@ -183,88 +182,87 @@ body {
     display: block;
     top:10%;
     margin-top: 1em;
-    margin-bottom: 5px; /* Space below the section title */
-    font-size: 24px; /* Size of the section title */
-    color: #9ca2b4; /* Color of the section title, adjust as needed */
-    /* Other styles... <div>Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a>is licensed by CC BY 4.0</div>*/
+    margin-bottom: 5px; 
+    font-size: 24px; 
+    color: #9ca2b4; 
+    
 }
 
 .section-title:hover::after {
-    width: 52rem; /* Optional: Increase the length of the line on hover */
+    width: 52rem; 
 }
 .section-subtitle:hover::after {
-    width: 22rem; /* Optional: Increase the length of the line on hover */
+    width: 22rem; 
 }
 .about-description {
     font-family: 'SanFransiscoM';
-    font-size: 1.125rem; /* Size of the about description text */
-    line-height: 1.6; /* Line height for better readability */
+    font-size: 1.125rem; 
+    line-height: 1.6; 
     max-width: 30rem;
-    margin-top: 1.25rem; /* Space above the about description */
+    margin-top: 1.25rem; 
     padding-bottom: 0rem;
 }
 .about-section {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start; /* Align items at the start of the container */
-    gap: 25px; /* Space between the about me text and the image frame */
+    align-items: flex-start; 
+    gap: 25px; 
 
 }
 .about-description-list {
     font-family: 'SanFransiscoM';
-    font-size: 1.1rem; /* Size of the about description text */
-    line-height: 1.6; /* Line height for better readability */
+    font-size: 1.1rem; 
+    line-height: 1.6; 
     max-width: 25rem;
-    margin-top: 1.25rem; /* Space above the about description */
+    margin-top: 1.25rem; 
     padding-bottom: 1rem;
     color:#9d9e99
 }
 #about-me {
     padding: 0rem;
-    flex-basis: 100%; /* Adjust the width as needed */
+    flex-basis: 100%; 
 }
 .highlight {
-    color: #55D8BD; /* Change to your preferred color */
-    cursor: pointer; /* Optional: Changes the cursor to a pointer to indicate interactivity */
+    color: #55D8BD; 
+    cursor: pointer; 
 }
 
 .highlight:hover {
-    text-decoration: underline; /* Adds underline on hover */
+    text-decoration: underline; 
 }
 #image-container {
-    width: 700px; /* or whatever width you desire */
-    height: 400px; /* to maintain aspect ratio */
-    padding: 10px; /* Padding around the image for the frame effect */
-    margin-top: 2rem; /* Adjust to position the image container */
+    width: 700px; 
+    height: 400px; 
+    padding: 10px; 
+    margin-top: 2rem; 
     box-sizing: border-box;
-    perspective: 1000px; /* Depth effect for 3D transformation */
+    perspective: 1000px; 
 }
 
 #image-container img {
-    width: 700px; /* or whatever width you desire */
-    height: 400px; /* to maintain aspect ratio */
-    margin-top: 25rem; /* to move it down */
-    display: block; /* to ensure it respects the width and height */
-    /* Remove flex: 1.5 if it's there */
+    width: 700px; 
+    height: 400px; 
+    margin-top: 25rem; 
+    display: block; 
+    
 }
 #profile-image {
-   max-width: 100%; /* Ensures the image is no larger than its container */
+   max-width: 100%; 
 }
 
-
 #profile-image {
-    height: auto; /* Maintain aspect ratio */
-    border: 1px solid #55D8BD; /* Color of the frame */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for 3D effect */
-    transform: translateZ(0); /* Initial state for 3D transformation */
+    height: auto; 
+    border: 1px solid #55D8BD; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+    transform: translateZ(0); 
     transition: transform 0.3s ease-in-out;
 }
 #second-image {
-    width: 700px; /* or whatever width you desire */
-    height: 400px; /* to maintain aspect ratio */
-    border: 1px solid #55D8BD; /* Color of the frame */
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Shadow for 3D effect */
-    transform: translateZ(0); /* Initial state for 3D transformation */
+    width: 700px; 
+    height: 400px; 
+    border: 1px solid #55D8BD; 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+    transform: translateZ(0); 
     transition: transform 0.3s ease-in-out;
     max-width: 100%;
 }
@@ -274,20 +272,20 @@ body {
     margin-top: 0rem;
 }
 #skills .section-title {
-    margin-top: 30%; /* Adjust this value as needed */
+    margin-top: 30%; 
 }
 
 .skills-logos {
-    display: flex; /* Align logos in a row */
-    flex-wrap: wrap; /* Allow logos to wrap to next line on small screens */
-    justify-content: center; /* Center logos within the container */
-    gap: 2rem; /* Space between logos */
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 2rem; 
 }
 
 .logo-container {
     position: relative;
-    width: 70px; /* Adjust size of logos */
-    height: 70px; /* Adjust size to match width for a square */
+    width: 70px; 
+    height: 70px; 
     margin: 0.5rem;
 }
 
@@ -312,10 +310,9 @@ body {
     color: white;
     font-size: 16px;
     font-family: 'SFMono';
-    box-sizing: border-box; /* Include padding in width and height */
-    text-align: center; /* Center align multi-line text */
+    box-sizing: border-box; 
+    text-align: center; 
 }
-
 
 .logo-container:hover .skill-logo {
     opacity: 0.3;
@@ -325,72 +322,68 @@ body {
     opacity: 1;
 }
 
-/* Adjustments for different screen sizes */
 @media (max-width: 600px) {
     .skills-logos {
-        justify-content: space-around; /* Adjust spacing on smaller screens */
+        justify-content: space-around; 
     }
 }
 
 @media (max-width: 600px) {
     .skill-logo {
-        width: 70px; /* Smaller logos for small screens */
+        width: 70px; 
         height: 70px;
     }
 }
 
 @media (max-width: 600px) {
     .greeting {
-        font-size: 18px; /* Minimum font size for greeting */
+        font-size: 18px; 
     }
 
     .intro h1 {
-        font-size: 56vw; /* Minimum font size for name */
+        font-size: 56vw; 
     }
 
     .tagline {
-        font-size: 2rem; /* Minimum font size for tagline */
+        font-size: 2rem; 
     }
 
     .cta-button {
-        font-size: 14px; /* Minimum font size for button text */
-        padding: 10px 20px; /* Adjust button padding */
+        font-size: 14px; 
+        padding: 10px 20px; 
     }
 }
 
-/* Maximum sizes */
 @media (min-width: 1200px) {
     .greeting {
-        font-size: 18px; /* Maximum font size for greeting */
+        font-size: 18px; 
     }
 
     .name {
-        font-size: 75px; /* Maximum font size for name */
+        font-size: 75px; 
     }
 
     .tagline {
-        font-size: 3.02rem; /* Maximum font size for tagline */
+        font-size: 3.02rem; 
     }
 
     .cta-button {
-        font-size: 15px; /* Maximum font size for button text */
-        padding: 16px 24px; /* Adjust button padding */
+        font-size: 15px; 
+        padding: 16px 24px; 
     }
 }
 
-/* Hide the menu toggle button by default */
 #menu-toggle {
     display: none;
 }
 
-/* Show the menu toggle button on smaller screens */
 @media (max-width: 768px) {
     #menu-toggle {
         display: block;
     }
 
     #header-nav {
-        display: none; /* Hide the navigation links by default */
+        display: none; 
         flex-direction: column;
         gap: 0;
     }
@@ -400,152 +393,136 @@ body {
     }
 
     #header-nav.show {
-        display: flex; /* Show the navigation links when the menu is toggled */
+        display: flex; 
     }
 }
 
-/* Style the navigation links as buttons */
 #header-nav li a {
     display: inline-block;
     padding: 10px 20px;
     margin: 5px;
-    background-color: #121113; /* Change this to your desired button color */
-    color: white; /* Change this to your desired text color */
+    background-color: #121113; 
+    color: white; 
     text-decoration: none;
-    border-radius: 5px; /* Optional: Add rounded corners */
+    border-radius: 5px; 
     font-weight: bold;
     text-align: center;
 }
 
-/* Add hover effect for the buttons */
 #header-nav li a:hover {
-    background-color: #0056b3; /* Change this to your desired hover color */
+    background-color: #0056b3; 
 }
 
-/* Ensure the header is fixed at the top */
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #141313; /* Change this to your desired background color */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
-    z-index: 1000; /* Ensure the header is above other content */
-    padding: 10px; /* Add padding to the header */
-    display: flex; /* Use Flexbox for alignment */
-    justify-content: center; /* Center the navigation links horizontally */
-    align-items: center; /* Center the navigation links vertically */
+    background-color: #141313; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 1000; 
+    padding: 10px; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
-/* Style the navigation */
 nav {
     display: flex;
-    justify-content: center; /* Align items to the left */
+    justify-content: center; 
     align-items: center;
     width: 100%;
 }
 
-/* Style the navigation list */
 #header-nav {
     display: flex;
-    justify-content: center; /* Center the navigation links */
-    align-items: center; /* Center the navigation links vertically */
-    gap: 10px; /* Add space between buttons */
-    list-style: none; /* Remove default list styling */
+    justify-content: center; 
+    align-items: center; 
+    gap: 10px; 
+    list-style: none; 
     padding: 0;
     margin: 0;
 }
 
-/*#main-content, #intro, #about-me, #skills, #image-container, #profile-image, #second-image {
-    border: 2px solid red;
-}
-
-/* added for Work */
-/* Style for the section title */
 .section-title {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #007BFF; /* Change this to your desired color */
-    margin-top: 0; /* Optional: Adjust the top margin */
+    color: #007BFF; 
+    margin-top: 0; 
 }
 
-/* Style for the work experience section */
 .work-experience-section {
     padding: 2rem;
-    background-color: #5f4f85; /* Change this to your desired background color */
-    color: #FFFFFF31; /* Change this to your desired text color */
+    background-color: #5f4f85; 
+    color: #FFFFFF31; 
     margin-top: 0; 
     display: flex;
     flex-direction: column;
     justify-content: flex-start
 }
 
-/* Style for each work experience entry */
 .work-experience {
     position: relative;
     margin-bottom: 2rem;
     padding: 1rem;
-    border: 1px solid #ddd; /* Optional: Add a border */
-    border-radius: 5px; /* Optional: Add rounded corners */
-    background-color: #151a46; /* Change this to your desired background color */
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    background-color: #151a46; 
 }
-/* Style for the work header to align items horizontally */
+
 .work-header {
     display: flex;
     align-items: center;
-    gap: 10px; /* Add space between the thumbnail and job title */
+    gap: 10px; 
 }
-/* Style for the thumbnail image */
+
 .thumbnail {
-    width: 50px; /* Set the width of the thumbnail */
-    height: auto; /* Maintain aspect ratio */
-    cursor: pointer; /* Change cursor to pointer on hover */
+    width: 50px; 
+    height: auto; 
+    cursor: pointer; 
 }
-/* Style for the full-size image */
+
 .fullsize-image {
-    display: none; /* Hide the full-size image by default */
+    display: none; 
     position: absolute;
     top: 0;
-    left: 60px; /* Adjust the position as needed */
-    z-index: 10; /* Ensure the full-size image is above other content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    left: 60px; 
+    z-index: 10; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
-/* Show the full-size image on hover */
+
 .thumbnail:hover + .fullsize-image {
     display: block;
 }
-/* Style for the full-size image */
+
 .thumbnail:hover::after {
-    content: url('images/cna-f.png'); /* Path to the full-size image */
+    content: url('images/cna-f.png'); 
     position: relative;
     top: 0;
-    left: 110px; /* Adjust the position as needed */
-    width: auto; /* Maintain aspect ratio */
-    height: auto; /* Maintain aspect ratio */
-    z-index: 10; /* Ensure the full-size image is above other content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    left: 110px; 
+    width: auto; 
+    height: auto; 
+    z-index: 10; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
-/* Style for the job title */
+
 .job-title {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
 }
 
-/* Style for the company name */
 .company-name {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
-/* Style for the job duration */
 .job-duration {
     font-size: 1rem;
     margin-bottom: 0.5rem;
-    color: #666; /* Change this to your desired color */
+    color: #666; 
 }
 
-/* Style for the job description */
 .job-description {
     font-size: 1rem;
     line-height: 1.5;
@@ -553,7 +530,6 @@ nav {
     font-family: 'SFMono';
 }
 
-/* Style for the job description */
 .job-description-list {
     font-size: 0.75rem;
     line-height: 1.5;
@@ -561,26 +537,24 @@ nav {
     font-family: 'SFMono';
 }
 
-/* Style for the footer */
 .footer {
-    background-color: #141313; /* Change this to your desired background color */
-    color: white; /* Change this to your desired text color */
-    text-align: center; /* Center the text */
-    padding: 20px 0; /* Add padding to the top and bottom */
-    position: fixed; /* Fix the footer at the bottom */
-    width: 100%; /* Make the footer span the full width */
-    bottom: 0; /* Position the footer at the bottom */
+    background-color: #141313; 
+    color: white; 
+    text-align: center; 
+    padding: 20px 0; 
+    position: fixed; 
+    width: 100%; 
+    bottom: 0; 
 }
 
 .footer a {
-    color: #007BFF; /* Change this to your desired link color */
-    text-decoration: none; /* Remove underline from links */
+    color: #007BFF; 
+    text-decoration: none; 
 }
 
 .footer a:hover {
-    text-decoration: underline; /* Add underline on hover */
+    text-decoration: underline; 
 }
-
 
 #container {
     text-align: center;
