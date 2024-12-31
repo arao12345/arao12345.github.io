@@ -258,8 +258,8 @@
     }
     
     #image-container {
-    width:'auto';
-    height:800px;
+    width:800px;
+    height:auto;
     padding:10px;
     margin-top:2rem;
     box-sizing:border-box;
@@ -267,8 +267,8 @@
     }
     
     #image-container img {
-    width:'auto';
-    height:auto;
+        width:800px;
+        height:auto;
     margin-top:25rem;
     display:flex;
     }
@@ -283,8 +283,8 @@
     }
     
     #second-image {
-    width:auto;
-    height:auto;
+        width:800px;
+        height:auto;
     border:1px solid #55D8BD;
     box-shadow:5px 5px 15px rgba(0,0,0,0.3);
     transform:translateZ(0);
