@@ -1,25 +1,3 @@
-function switchImageOld() {
-    var currentImage = document.getElementById('profile-image');
-    var secondImage = document.getElementById('second-image');
-
-    // Check if the current image is visible
-    if (currentImage.style.display !== 'none') {
-        currentImage.style.display = 'none';
-        secondImage.style.display = 'block';
-        // Set the size of the second image while maintaining aspect ratio
-        secondImage.style.width = '300px'; // Adjust the width as needed
-        secondImage.style.height = 'auto'; // Maintain aspect ratio
-
-    } else {
-        currentImage.style.display = 'block';
-        secondImage.style.display = 'none';
-        // Set the size of the current image while maintaining aspect ratio
-        currentImage.style.width = '300px'; // Adjust the width as needed
-        currentImage.style.height = 'auto'; // Maintain aspect ratio
-
-    }
-}
-
 let currentImageIndex = 0;
 
 function switchImage() {
@@ -28,7 +6,7 @@ function switchImage() {
     currentImageIndex = (currentImageIndex + 1) % images.length; // Move to the next image index
     images[currentImageIndex].style.display = 'block'; // Show the next image
 
-    images[currentImageIndex].style.width = '400px'; // Adjust the width as needed
+    images[currentImageIndex].style.width = '800px'; // Adjust the width as needed
     images[currentImageIndex].style.height = 'auto'; // Maintain aspect ratio
 
 }

@@ -258,8 +258,8 @@
     }
     
     #image-container {
-    width:700px;
-    height:400px;
+    width:'auto';
+    height:800px;
     padding:10px;
     margin-top:2rem;
     box-sizing:border-box;
@@ -267,10 +267,10 @@
     }
     
     #image-container img {
-    width:700px;
-    height:400px;
+    width:'auto';
+    height:auto;
     margin-top:25rem;
-    display:block
+    display:flex;
     }
     
     #profile-image {
@@ -283,8 +283,8 @@
     }
     
     #second-image {
-    width:700px;
-    height:400px;
+    width:auto;
+    height:auto;
     border:1px solid #55D8BD;
     box-shadow:5px 5px 15px rgba(0,0,0,0.3);
     transform:translateZ(0);
