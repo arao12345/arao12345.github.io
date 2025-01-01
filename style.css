@@ -625,3 +625,23 @@ iframe {
     display:block;
     width:100%;
 }
+/*---------- */
+.work-experience {
+    display: flex;
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Add space between the content and the image */
+    margin-bottom: 2rem; /* Add space below each work experience entry */
+}
+
+.work-content {
+    flex: 1; /* Allow the content to take up available space */
+}
+
+.work-image {
+    max-width: 800px; 
+}
+
+.profile-image {
+    max-width: 800px; /* Ensure the image does not exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+}
