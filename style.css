@@ -251,7 +251,7 @@ body {
 .highlight {
     color: #55D8BD;
     cursor: pointer;
-    background-color: white;
+    transition: background-color .3s ease-in-out
 }
 
 .highlight:hover {
