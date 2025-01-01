@@ -1,614 +1,615 @@
 * {
-    margin:0;
-    padding:0;
-    font-family:Arial,Helvetica,sans-serif;
-    border:none;
-    box-sizing:border-box
-    }
-    
-    ::selection {
-    background:#323d52;
-    color:#8080ff
-    }
-    
-    html {
-    font-size:24px
-    }
-    
-    body {
-    background:#10194b;
-    background:linear-gradient(90deg,#0e102c 23%,rgba(12,18,32,1) 54%,rgba(15,23,42,1) 100%);
-    color:#fff;
-    margin:0;
-    padding:0
-    }
-    
-    @font-face {
-    font-family:'SanFransiscoHEAVY';
-    src:url(fonts/SF-Pro-Display-Heavy.otf);
-    font-weight:400;
-    font-style:normal
-    }
-    
-    @font-face {
-    font-family:'SanFransiscoM';
-    src:url(fonts/SF-Pro-Display-Medium.otf);
-    font-weight:400;
-    font-style:normal
-    }
-    
-    @font-face {
-    font-family:'SanFransisco';
-    src:url(fonts/SF-Pro-Display-Regular.otf);
-    font-weight:400;
-    font-style:normal
-    }
-    
-    @font-face {
-    font-family:'SFMono';
-    src:url(fonts/FiraMono-Regular.ttf);
-    font-weight:400;
-    font-style:normal
-    }
-    
-    @font-face {
-    font-family:'HalifaxBold';
-    src:url(Halifax\ W03\ Bold.ttf);
-    font-weight:700;
-    font-style:normal
-    }
-    
-    @keyframes fadeIn {
-    from {
-    opacity:0
-    }
-    
-    to {
-    opacity:1
-    }
-    }
-    
-    @keyframes slideInFromRight {
-    0% {
-    transform:translateX(100%);
-    opacity:0
-    }
-    
-    100% {
-    transform:translateX(0);
-    opacity:1
-    }
-    }
-    
-    #main-content {
-    display:flex;
-    flex-direction:column;
-    align-items:flex-start;
-    margin:0 auto;
-    width:80%;
-    max-width:62.5rem;
-    padding:5rem 1.25rem;
-    gap:2rem
-    }
-    
-    #intro,#about-me {
-    width:100%;
-    text-align:left
-    }
-    
-    #intro {
-    margin-top:18rem
-    }
-    
-    #intro h1 {
-    color:#CCD6F6;
-    font-family:'SanFransiscoHEAVY';
-    font-size:3.02rem;
-    margin-bottom:20px;
-    margin-left:0
-    }
-    
-    .greeting {
-    font-family:'SFMono';
-    font-size:18px;
-    color:#55D8BD;
-    margin-bottom:10px
-    }
-    
-    .name {
-    font-weight:700;
-    color:#575757;
-    margin-bottom:30px
-    }
-    
-    .tagline {
-    font-family:'SanFransiscoHEAVY';
-    color:#8892B0;
-    margin-bottom:20px;
-    font-size:1.5rem!important
-    }
-    
-    .tags {
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
-    margin-top:10px
-    }
-    
-    .tags span {
-    background-color:#405e7e;
-    color:#fff;
-    padding:5px 10px;
-    border-radius:5px;
-    font-size:.9rem;
-    font-weight:700;
-    transition:box-shadow .3s ease
-    }
-    
-    .tags span:hover {
-    box-shadow:0 4px 8px rgba(164,164,196,0.884)
-    }
-    
-    .cta-button {
-    display:inline-block;
-    background:transparent;
-    color:#55D8BD;
-    padding:10px 20px;
-    border:1.5px solid #55D8BD;
-    text-decoration:none;
-    font-family:'SFMono';
-    font-size:14px;
-    border-radius:5px;
-    transition:background-color 0.3s,color .3s;
-    transition:transform .3s ease,box-shadow .3s ease
-    }
-    
-    .cta-button:hover {
-    background:transparent;
-    color:#55D8BD;
-    border-color:#55D8BD;
-    transform:scale(1.02) translate(0,-5px);
-    box-shadow:10px 10px 0 0 #55D8BD
-    }
-    
-    #about-me {
-    font-family:Arial,Helvetica,sans-serif;
-    color:#7582a3
-    }
-    
-    .section-title {
-    font-family:'SanFransiscoM',Arial,sans-serif;
-    position:relative;
-    display:inline-block;
-    margin-top:60%;
-    margin-bottom:20px;
-    font-size:32px;
-    color:#CCD6F6
-    }
-    
-    .section-title::after {
-    content:'';
-    position:absolute;
-    top:50%;
-    left:calc(100% + 15px);
-    width:3.125rem;
-    height:.5px;
-    background-color:#575757;
-    transition:width .3s ease-in-out;
-    transform:translateY(-50%)
-    }
-    
-    .section-subtitle {
-    font-family:'SanFransiscoM',Arial,sans-serif;
-    position:relative;
-    display:block;
-    top:10%;
-    margin-top:1em;
-    margin-bottom:5px;
-    font-size:24px;
-    color:#9ca2b4
-    }
-    
-    .section-title:hover::after {
-    width:52rem
-    }
-    
-    .section-subtitle:hover::after {
-    width:22rem
-    }
-    
-    .about-description {
-    font-family:'SanFransiscoM';
-    font-size:1.125rem;
-    line-height:1.6;
-    max-width:30rem;
-    margin-top:1.25rem;
-    padding-bottom:0
-    }
-    
-    .about-section {
-    display:flex;
-    justify-content:space-between;
-    align-items:flex-start;
-    gap:25px
-    }
-    
-    .about-description-list {
-    font-family:'SanFransiscoM';
-    font-size:1.1rem;
-    line-height:1.6;
-    max-width:25rem;
-    margin-top:1.25rem;
-    padding-bottom:1rem;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    box-sizing: border-box
+}
 
+::selection {
+    background: #323d52;
+    color: #8080ff
+}
+
+html {
+    font-size: 24px
+}
+
+body {
+    background: #10194b;
+    background: linear-gradient(90deg, #0e102c 23%, rgba(12, 18, 32, 1) 54%, rgba(15, 23, 42, 1) 100%);
+    color: #fff;
+    margin: 0;
+    padding: 0
+}
+
+@font-face {
+    font-family: 'SanFransiscoHEAVY';
+    src: url(fonts/SF-Pro-Display-Heavy.otf);
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'SanFransiscoM';
+    src: url(fonts/SF-Pro-Display-Medium.otf);
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'SanFransisco';
+    src: url(fonts/SF-Pro-Display-Regular.otf);
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'SFMono';
+    src: url(fonts/FiraMono-Regular.ttf);
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'HalifaxBold';
+    src: url(Halifax\ W03\ Bold.ttf);
+    font-weight: 700;
+    font-style: normal
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0
     }
-    
-    #about-me {
-    padding:0;
-    flex-basis:100%
+
+    to {
+        opacity: 1
     }
-    
-    .highlight {
-    color:#55D8BD;
-    cursor:pointer
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0
     }
-    
-    .highlight:hover {
-    text-decoration:underline
+
+    100% {
+        transform: translateX(0);
+        opacity: 1
     }
-    
-    #image-container {
-    width:800px;
-    height:auto;
-    padding:10px;
-    margin-top:2rem;
-    box-sizing:border-box;
-    perspective:1000px
-    }
-    
-    #image-container img {
-    width:800px;
-    height:auto;
-    margin-top:25rem;
-    display:block
-    }
-    
-    #profile-image {
-    max-width:100%;
-    height:auto;
-    border:1px solid #55D8BD;
-    box-shadow:5px 5px 15px rgba(0,0,0,0.3);
-    transform:translateZ(0);
-    transition:transform .3s ease-in-out
-    }
-    
-    #second-image {
-    width:800px;
-    height:auto;
-    border:1px solid #55D8BD;
-    box-shadow:5px 5px 15px rgba(0,0,0,0.3);
-    transform:translateZ(0);
-    transition:transform .3s ease-in-out;
-    max-width:100%
-    }
-    
-    #skills {
-    padding:20px;
-    margin-top:0
-    }
-    
-    #skills .section-title {
-    margin-top:30%
-    }
-    
+}
+
+#main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 62.5rem;
+    padding: 5rem 1.25rem;
+    gap: 2rem
+}
+
+#intro,
+#about-me {
+    width: 100%;
+    text-align: left
+}
+
+#intro {
+    margin-top: 18rem
+}
+
+#intro h1 {
+    color: #CCD6F6;
+    font-family: 'SanFransiscoHEAVY';
+    font-size: 3.02rem;
+    margin-bottom: 20px;
+    margin-left: 0
+}
+
+.greeting {
+    font-family: 'SFMono';
+    font-size: 18px;
+    color: #55D8BD;
+    margin-bottom: 10px
+}
+
+.name {
+    font-weight: 700;
+    color: #575757;
+    margin-bottom: 30px
+}
+
+.tagline {
+    font-family: 'SanFransiscoHEAVY';
+    color: #8892B0;
+    margin-bottom: 20px;
+    font-size: 1.5rem !important
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px
+}
+
+.tags span {
+    background-color: #405e7e;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: .9rem;
+    font-weight: 700;
+    transition: box-shadow .3s ease
+}
+
+.tags span:hover {
+    box-shadow: 0 4px 8px rgba(164, 164, 196, 0.884)
+}
+
+.cta-button {
+    display: inline-block;
+    background: transparent;
+    color: #55D8BD;
+    padding: 10px 20px;
+    border: 1.5px solid #55D8BD;
+    text-decoration: none;
+    font-family: 'SFMono';
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color .3s;
+    transition: transform .3s ease, box-shadow .3s ease
+}
+
+.cta-button:hover {
+    background: transparent;
+    color: #55D8BD;
+    border-color: #55D8BD;
+    transform: scale(1.02) translate(0, -5px);
+    box-shadow: 10px 10px 0 0 #55D8BD
+}
+
+#about-me {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #7582a3
+}
+
+.section-title {
+    font-family: 'SanFransiscoM', Arial, sans-serif;
+    position: relative;
+    display: inline-block;
+    margin-top: 60%;
+    margin-bottom: 20px;
+    font-size: 32px;
+    color: #CCD6F6
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 15px);
+    width: 3.125rem;
+    height: .5px;
+    background-color: #575757;
+    transition: width .3s ease-in-out;
+    transform: translateY(-50%)
+}
+
+.section-subtitle {
+    font-family: 'SanFransiscoM', Arial, sans-serif;
+    position: relative;
+    display: block;
+    top: 10%;
+    margin-top: 1em;
+    margin-bottom: 5px;
+    font-size: 24px;
+    color: #9ca2b4
+}
+
+.section-title:hover::after {
+    width: 52rem
+}
+
+.section-subtitle:hover::after {
+    width: 22rem
+}
+
+.about-description {
+    font-family: 'SanFransiscoM';
+    font-size: 1.125rem;
+    line-height: 1.6;
+    max-width: 30rem;
+    margin-top: 1.25rem;
+    padding-bottom: 0
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px
+}
+
+.about-description-list {
+    font-family: 'SanFransiscoM';
+    font-size: 1.125rem;
+    line-height: 1.6;
+    max-width: 25rem;
+    margin-top: 1.25rem;
+    padding-bottom: 1rem;
+}
+
+#about-me {
+    padding: 0;
+    flex-basis: 100%
+}
+
+.highlight {
+    color: #55D8BD;
+    cursor: pointer
+}
+
+.highlight:hover {
+    text-decoration: underline
+}
+
+#image-container {
+    width: 800px;
+    height: auto;
+    padding: 10px;
+    margin-top: 2rem;
+    box-sizing: border-box;
+    perspective: 1000px
+}
+
+#image-container img {
+    width: 800px;
+    height: auto;
+    margin-top: 25rem;
+    display: block
+}
+
+#profile-image {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #55D8BD;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateZ(0);
+    transition: transform .3s ease-in-out
+}
+
+#second-image {
+    width: 800px;
+    height: auto;
+    border: 1px solid #55D8BD;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateZ(0);
+    transition: transform .3s ease-in-out;
+    max-width: 100%
+}
+
+#skills {
+    padding: 20px;
+    margin-top: 0
+}
+
+#skills .section-title {
+    margin-top: 30%
+}
+
+.skills-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem
+}
+
+.logo-container {
+    position: relative;
+    width: 70px;
+    height: 70px;
+    margin: .5rem
+}
+
+.skill-logo {
+    width: 100%;
+    height: auto;
+    transition: opacity .3s ease
+}
+
+.logo-description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity .3s ease;
+    background-color: linear-gradient(90deg, #0e102c 23%, rgba(12, 18, 32, 1) 54%, rgba(15, 23, 42, 1) 100%);
+    color: #fff;
+    font-size: 16px;
+    font-family: 'SFMono';
+    box-sizing: border-box;
+    text-align: center
+}
+
+.logo-container:hover .skill-logo {
+    opacity: .3
+}
+
+.logo-container:hover .logo-description {
+    opacity: 1
+}
+
+@media (max-width: 600px) {
     .skills-logos {
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:center;
-    gap:2rem
+        justify-content: space-around
     }
-    
-    .logo-container {
-    position:relative;
-    width:70px;
-    height:70px;
-    margin:.5rem
-    }
-    
+
     .skill-logo {
-    width:100%;
-    height:auto;
-    transition:opacity .3s ease
+        width: 70px;
+        height: 70px
     }
-    
-    .logo-description {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    opacity:0;
-    transition:opacity .3s ease;
-    background-color:linear-gradient(90deg,#0e102c 23%,rgba(12,18,32,1) 54%,rgba(15,23,42,1) 100%);
-    color:#fff;
-    font-size:16px;
-    font-family:'SFMono';
-    box-sizing:border-box;
-    text-align:center
-    }
-    
-    .logo-container:hover .skill-logo {
-    opacity:.3
-    }
-    
-    .logo-container:hover .logo-description {
-    opacity:1
-    }
-    
-    @media (max-width: 600px) {
-    .skills-logos {
-    justify-content:space-around
-    }
-    
-    .skill-logo {
-    width:70px;
-    height:70px
-    }
-    
+
     .greeting {
-    font-size:18px
+        font-size: 18px
     }
-    
+
     .intro h1 {
-    font-size:56vw
+        font-size: 56vw
     }
-    
+
     .tagline {
-    font-size:2rem
+        font-size: 2rem
     }
-    
+
     .cta-button {
-    font-size:14px;
-    padding:10px 20px
+        font-size: 14px;
+        padding: 10px 20px
     }
-    }
-    
-    @media (min-width: 1200px) {
+}
+
+@media (min-width: 1200px) {
     .greeting {
-    font-size:18px
+        font-size: 18px
     }
-    
+
     .name {
-    font-size:75px
+        font-size: 75px
     }
-    
+
     .tagline {
-    font-size:3.02rem
+        font-size: 3.02rem
     }
-    
+
     .cta-button {
-    font-size:15px;
-    padding:16px 24px
+        font-size: 15px;
+        padding: 16px 24px
     }
-    }
-    
+}
+
+#menu-toggle {
+    display: none
+}
+
+@media (max-width: 768px) {
     #menu-toggle {
-    display:none
+        display: block
     }
-    
-    @media (max-width: 768px) {
-    #menu-toggle {
-    display:block
-    }
-    
+
     #header-nav {
-    display:none;
-    flex-direction:column;
-    gap:0
+        display: none;
+        flex-direction: column;
+        gap: 0
     }
-    
+
     #header-nav li {
-    margin:.5rem 0
+        margin: .5rem 0
     }
-    
+
     #header-nav.show {
-    display:flex
+        display: flex
     }
-    }
-    
-    #header-nav li a {
-    display:inline-block;
-    padding:10px 20px;
-    margin:5px;
-    background-color:#10194b;
-    color:#fff;
-    text-decoration:none;
-    border-radius:5px;
-    font-weight:700;
-    text-align:center
-    }
-    
-    #header-nav li a:hover {
-    color:#55D8BD;
-    }
-    
-    header {
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background-color:#10194b;
-    box-shadow:0 2px 4px rgba(0,0,0,0.1);
-    z-index:1000;
-    padding:10px;
-    display:flex;
-    justify-content:center;
-    align-items:center
-    }
-    
-    nav {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    width:100%
-    }
-    
-    #header-nav {
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    gap:10px;
-    list-style:none;
-    padding:0;
-    margin:0
-    }
-    
-    .section-title {
-    font-size:2rem;
-    margin-bottom:1rem;
-    color:#007BFF;
-    margin-top:0
-    }
-    
-    .work-experience-section {
-    padding:2rem;
-    background-color:#5f4f85;
-    color:#FFFFFF31;
-    margin-top:0;
-    display:flex;
-    flex-direction:column;
-    justify-content:flex-start
-    }
-    
-    .work-experience {
-    position:relative;
-    margin-bottom:2rem;
-    padding:1rem;
-    border:1px solid #ddd;
-    border-radius:5px;
-    background-color:#151a46
-    }
-    
-    .work-header {
-    display:flex;
-    align-items:center;
-    gap:10px
-    }
-    
-    .thumbnail {
-    width:50px;
-    height:auto;
-    cursor:pointer
-    }
-    
-    .fullsize-image {
-    display:none;
-    position:absolute;
-    top:0;
-    left:60px;
-    z-index:10;
-    box-shadow:0 4px 8px rgba(0,0,0,0.2)
-    }
-    
-    .thumbnail:hover + .fullsize-image {
-    display:block
-    }
-    
-    .thumbnail:hover::after {
-    content:url('images/cna-f.png');
-    position:relative;
-    top:0;
-    left:110px;
-    width:auto;
-    height:auto;
-    z-index:10;
-    box-shadow:0 4px 8px rgba(0,0,0,0.2)
-    }
-    
-    .job-title {
-    font-size:1.5rem;
-    font-weight:700;
-    margin-bottom:.5rem
-    }
-    
-    .company-name {
-    font-size:1.2rem;
-    margin-bottom:.5rem
-    }
-    
-    .job-duration {
-    font-size:1rem;
-    margin-bottom:.5rem;
-    color:#666
-    }
-    
-    .job-description {
-    font-size:1rem;
-    line-height:1.5;
-    margin-bottom:.1rem;
-    font-family:'SFMono'
-    }
-    
-    .job-description-list {
-    font-size:1rem;
-    line-height:1.5;
-    margin-bottom:.1rem;
-    font-family:'SFMono'
-    }
-    
-    .footer {
-    background-color:#141313;
-    color:#fff;
-    text-align:center;
-    padding:20px 0;
-    position:fixed;
-    width:100%;
-    bottom:0
-    }
-    
-    .footer a {
-    color:#007BFF;
-    text-decoration:none
-    }
-    
-    .footer a:hover {
-    text-decoration:underline
-    }
-    
-    #container {
-    text-align:center
-    }
-    
-    a,figure {
-    display:inline-block
-    }
-    
-    figcaption {
-    margin:10px 0 0;
-    font-variant:small-caps;
-    font-family:Arial;
-    font-weight:700;
-    color:#b33
-    }
-    
-    figure {
-    padding:5px
-    }
-    
-    img:hover {
-    transform:scale(1.1);
-    -ms-transform:scale(1.1);
-    -webkit-transform:scale(1.1);
-    -moz-transform:scale(1.1);
-    -o-transform:scale(1.1)
-    }
-    
-    img {
-    transition:transform .2s;
-    -webkit-transition:-webkit-transform .2s;
-    -moz-transition:-moz-transform .2s;
-    -o-transition:-o-transform .2s
-    }
+}
+
+#header-nav li a {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #10194b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center
+}
+
+#header-nav li a:hover {
+    color: #55D8BD;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #10194b;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+#header-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #007BFF;
+    margin-top: 0
+}
+
+.work-experience-section {
+    padding: 2rem;
+    background-color: #5f4f85;
+    color: #FFFFFF31;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start
+}
+
+.work-experience {
+    position: relative;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #151a46
+}
+
+.work-header {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.thumbnail {
+    width: 50px;
+    height: auto;
+    cursor: pointer
+}
+
+.fullsize-image {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 60px;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+.thumbnail:hover+.fullsize-image {
+    display: block
+}
+
+.thumbnail:hover::after {
+    content: url('images/cna-f.png');
+    position: relative;
+    top: 0;
+    left: 110px;
+    width: auto;
+    height: auto;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2)
+}
+
+.job-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: .5rem
+}
+
+.company-name {
+    font-size: 1.2rem;
+    margin-bottom: .5rem
+}
+
+.job-duration {
+    font-size: 1rem;
+    margin-bottom: .5rem;
+    color: #666
+}
+
+.job-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: .1rem;
+    font-family: 'SFMono'
+}
+
+.job-description-list {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: .1rem;
+    font-family: 'SFMono'
+}
+
+.footer {
+    background-color: #141313;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0
+}
+
+.footer a {
+    color: #007BFF;
+    text-decoration: none
+}
+
+.footer a:hover {
+    text-decoration: underline
+}
+
+#container {
+    text-align: center
+}
+
+a,
+figure {
+    display: inline-block
+}
+
+figcaption {
+    margin: 10px 0 0;
+    font-variant: small-caps;
+    font-family: Arial;
+    font-weight: 700;
+    color: #b33
+}
+
+figure {
+    padding: 5px
+}
+
+img:hover {
+    transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1)
+}
+
+img {
+    transition: transform .2s;
+    -webkit-transition: -webkit-transform .2s;
+    -moz-transition: -moz-transform .2s;
+    -o-transition: -o-transform .2s
+}
