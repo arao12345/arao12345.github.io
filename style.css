@@ -240,7 +240,7 @@
     max-width:25rem;
     margin-top:1.25rem;
     padding-bottom:1rem;
-    color:#9d9e99
+
     }
     
     #about-me {
@@ -553,7 +553,7 @@
     }
     
     .job-description-list {
-    font-size:.75rem;
+    font-size:1rem;
     line-height:1.5;
     margin-bottom:.1rem;
     font-family:'SFMono'
