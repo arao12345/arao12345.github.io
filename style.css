@@ -250,11 +250,13 @@ body {
 
 .highlight {
     color: #55D8BD;
-    cursor: pointer
+    cursor: pointer;
+    background-color: white;
 }
 
 .highlight:hover {
-    text-decoration: underline
+    text-decoration: underline;
+    background-color: rgb(185, 194, 245);
 }
 
 #image-container {
@@ -294,11 +296,12 @@ body {
 
 #skills {
     padding: 20px;
-    margin-top: 0
+    margin-top: 10%
 }
 
 #skills .section-title {
-    margin-top: 30%
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 .skills-logos {
