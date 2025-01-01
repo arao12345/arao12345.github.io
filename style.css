@@ -622,8 +622,10 @@ img {
 }
 
 iframe {
-    display:block;
-    width:100%;
+    display: block;
+    width: 100%;
+    max-width: 800px; /* Ensure the iframe does not exceed 800px */
+    height: auto; /* Maintain aspect ratio */
 }
 /*---------- */
 .work-experience {
