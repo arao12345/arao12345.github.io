@@ -650,3 +650,18 @@ iframe {
     max-width: 800px; /* Ensure the image does not exceed its container's width */
     height: auto; /* Maintain aspect ratio */
 }
+
+.contact-button {
+    background-color: white; /* Set background to white */
+    color: #000; /* Set text color to black or any other color for contrast */
+    padding: 10px 20px; /* Add padding for better appearance */
+    border: 1px solid #ccc; /* Optional: Add a border */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    text-decoration: none; /* Remove underline from the link */
+    display: inline-block; /* Make the link behave like a button */
+    font-weight: bold; /* Make the text bold */
+}
+
+.contact-button:hover {
+    background-color: #f0f0f0; /* Optional: Change background color on hover */
+}
