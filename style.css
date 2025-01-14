@@ -147,7 +147,7 @@ body {
 }
 
 .tags span:hover {
-    box-shadow: 0 4px 8px rgba(164, 164, 196, 0.884)
+    box-shadow: 0 0.25rem 0.5rem rgba(164, 164, 196, 0.884)
 }
 
 .cta-button {
@@ -183,7 +183,7 @@ body {
     display: inline-block;
     margin-top: 60%;
     margin-bottom: 1.25rem;
-    font-size: 32px;
+    font-size: 2rem;
     color: #CCD6F6
 }
 
@@ -206,7 +206,7 @@ body {
     top: 10%;
     margin-top: 1em;
     margin-bottom: 0.3125rem;
-    font-size: 24px;
+    font-size: 1.5rem;
     color: #9ca2b4
 }
 
@@ -231,7 +231,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 25px
+    gap: 1.5rem
 }
 
 .about-description-list {
